@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0056b3;
+    height: 12vh;
+    width: 100%;
+}
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+}
+h1:hover{
+    transform: scale(1.1);
+
+}
+.nav {
+    display: flex;
+    
+}
+.nav ul{
+    display: flex;
+   margin-right: 30px;
+}
+.nav ul li{
+  list-style: none;
+  gap: 35px;
+}
+.nav ul li a{
+    margin-right: 40px;
+    padding: 12px;
+    text-decoration: none;
+    color: #141313;
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: darkgray;
+    color: #666;
+    border-radius: 12px;
+    font-size: 17px;
+    
+}
+.container {
+    width: 100%;
+    margin: auto;
+   
+    background-color: darkcyan;
+    height: 110vh;
+}
+
+/* Estilos da seção "Sobre a Loja" */
+.sobre {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sobre-imagem img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 50px;
+    border-radius: 13px;
+}
+
+.sobre-texto {
+    width: 500px;
+    height: 200px;
+    padding-left: 10px;
+    margin-left: 30px;
+    
+}
+
+h3{
+    margin-bottom: 12px;
+    font-size: 35px;
+    font-weight: 900;
+}
+p{
+    font-size: 18px;
+    color: #fff;
+}
+.produtos {
+    width: 100%;
+    display: flex;
+    height: 390px;
+    align-items: end;
+    justify-content: space-evenly;
+    margin-top: 0%; 
+    padding: 0;  
+}
+
+.produto {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color:#bcc7df;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+h2{
+    width: 100%;
+    font-style: italic;
+    font-size: 24px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    
+}
+hr{
+display: flex;
+align-items: end;
+justify-content: end;
+margin-bottom: 0;
+
+}
+
+
+.produto img {
+    border-radius: 13px;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 0px;
+    margin-right: 0;
+    object-fit: cover;
+}
+
+.produto h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #666;
+   
+}
+
+button {
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen 
+   and (max-width : 767px) {
+   
+  
+   container{
+    max-width: 100%;
+    display: block;
+    padding: 0;
+   
+   }
+   .sobre{
+    display: block;
+    
+    padding-top: 2px;
+    align-items: center;
+    margin-left: 0;
+   }
+   .sobre-imagem{
+
+   }
+  .sobre-texto{
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+  .sobre-texto h3{
+    margin-top: 10px;
+  }
+
+  .produtos{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100px;
+    width: 100%;
+  }
+  .produto{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
+  .nav ul{
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  li {
+    margin-top: 25px;
+  }
+  
+}
